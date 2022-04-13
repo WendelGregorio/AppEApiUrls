@@ -1,10 +1,6 @@
 {
   "urls": [
     {
-      "name": "youtube",
-      "url": "http://youtube.com.br"
-    },
-    {
       "name": "Facebook",
       "url": "http://facebook.com.br"
     },

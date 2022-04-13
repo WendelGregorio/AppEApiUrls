@@ -4,10 +4,14 @@ const form = document.querySelector('form')
 
 
 async function load() {
-    const res = await fetch("http://localhost:3000/").then((data) => data.json())
+    const res = await fetch("http://localhost:3000/")
+
+    //const teste = fetch("http://localhost:3000/")
+    //console.log(await Promise.all([teste,teste,teste]))
+
+    const data = await res.json()
     
-    
-    res.urls.map(({name, url}) => addElement({name, url}))
+    data.urls.map(({name, url}) => addElement({name, url}))
 }
 
 load()
